@@ -2,7 +2,7 @@
 
 A full-stack web application that leverages the Google Gemini API to dynamically generate structured educational courses, complete with modules and quizzes, from a single user prompt.
 
-**Live Demo:** [https://ai-course-generator-ahcxgxajcuc8fdc6.centralindia-01.azurewebsites.net/](https://ai-course-generator-ahcxgxajcuc8fdc6.centralindia-01.azurewebsites.net/)
+**Live Demo:** [https://ai-course-generator-production.up.railway.app/](https://ai-course-generator-production.up.railway.app/)
 
 ---
 
