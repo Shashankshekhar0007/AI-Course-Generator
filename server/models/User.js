@@ -2,7 +2,7 @@
 import { DataTypes, Model } from 'sequelize';
 import sequelize from '../db.js';
 
-class User extends Model {}
+class User extends Model { }
 User.init({
   name: { type: DataTypes.STRING },
   email: { type: DataTypes.STRING, unique: true },
@@ -13,21 +13,21 @@ User.init({
   timestamps: true
 });
 
-class Course extends Model {}
+class Course extends Model { }
 Course.init({
-  prompt: { type: DataTypes.STRING }, // course prompt/title
+  prompt: { type: DataTypes.STRING },
   createdAt: { type: DataTypes.DATE, defaultValue: DataTypes.NOW }
 }, {
   sequelize,
   modelName: 'course',
-  timestamps: false // we set createdAt manually (or you can enable timestamps)
+  timestamps: false
 });
 
-class Module extends Model {}
+class Module extends Model { }
 Module.init({
   title: { type: DataTypes.STRING },
-  content: { type: DataTypes.TEXT('long') }, // allow long markdown
-  quiz: { type: DataTypes.TEXT('long') }      // store quiz text/raw
+  content: { type: DataTypes.TEXT('long') },
+  quiz: { type: DataTypes.TEXT('long') }
 }, {
   sequelize,
   modelName: 'module',
